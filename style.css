@@ -1,0 +1,270 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 160rem;
+  margin: 0 auto;
+}
+
+main {
+  margin: 1.8rem 1.8rem 0 1.8rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr auto;
+  gap: 1.8rem;
+  align-items: start;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid #eee;
+}
+
+/* 
+*****************************************
+ABOUT ME
+*****************************************
+*/
+
+.profile {
+  box-shadow: 0 2px 1.6rem rgba(0, 0, 0, 0.3);
+  grid-row: span 2;
+  align-content: start;
+}
+
+.profile-text-box {
+  padding: 1.6rem 2.4rem;
+  color: #777;
+}
+
+.profile-text-box p {
+  margin-top: 2rem;
+}
+
+.profile-icon {
+  color: #009688;
+}
+
+.img-box {
+  position: relative;
+}
+
+.img-box img {
+  width: 100%;
+  height: auto;
+}
+
+.about {
+  margin-bottom: 2rem;
+}
+
+.skills {
+  margin: 2rem 0;
+}
+
+.heading-skills span {
+  font-weight: 600;
+}
+
+.name {
+  position: absolute;
+  bottom: 0;
+  font-size: 4rem;
+  padding: 2rem;
+  font-weight: 500;
+}
+
+.about-me {
+  font-size: 2.4rem;
+  margin-top: 2.4rem;
+  display: flex;
+  align-items: center;
+}
+
+.about-me span {
+  margin-left: 1rem;
+}
+
+.how-good-box {
+  position: relative;
+  font-size: 1.6rem;
+}
+
+.how-good {
+  background-color: #eee;
+  padding: 0.3rem;
+  border-radius: 2.5rem;
+}
+
+.upper {
+  position: absolute;
+  padding: 0.3rem;
+  background-color: #009688;
+
+  text-align: center;
+  color: #fff;
+
+  width: 90%;
+  transform: translate(0, -81%);
+  top: 0;
+}
+
+.s2 {
+  width: 80%;
+}
+.s3 {
+  width: 75%;
+}
+.s4 {
+  width: 50%;
+}
+
+.language {
+  margin-top: 5rem;
+  padding: 1.5rem;
+}
+
+.language .l1,
+.l2,
+.l3 {
+  transform: translate(0, -65%);
+}
+
+.l1 {
+  width: 100%;
+}
+.l2 {
+  width: 50%;
+}
+.l3 {
+  width: 25%;
+}
+
+.languages .about-me {
+  margin-top: 2.4rem;
+}
+
+/* 
+*****************************************
+WORK
+*****************************************
+*/
+
+.work {
+  padding: 2.4rem;
+  color: #777;
+  box-shadow: 0 2px 1.6rem rgba(0, 0, 0, 0.3);
+}
+
+.heading-work {
+  display: flex;
+  align-items: center;
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 6.2rem;
+}
+.heading-work span {
+  margin-left: 2.4rem;
+}
+
+.front {
+  margin-top: 3rem;
+  margin-left: 2.2rem;
+  margin-bottom: 3rem;
+}
+
+.front-heading {
+  font-size: 2.3rem;
+  font-weight: 500;
+  color: #666;
+  margin-bottom: 2.4rem;
+}
+
+.date {
+  font-size: 2rem;
+  color: #009688;
+  margin-bottom: 3rem;
+}
+
+.icon-1 {
+  margin-right: 2rem;
+}
+
+.span-box {
+  /* display: inline-block; */
+  padding: 0.5rem;
+  background-color: #009688;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.front-text {
+  color: #000;
+  font-size: 1.9rem;
+  line-height: 1.5;
+}
+
+/* 
+*****************************************
+ABOUT ME
+*****************************************
+*/
+
+footer {
+  background-color: #009688;
+  padding: 1.5rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+footer p,
+.footer-link {
+  color: #fff;
+  font-size: 2rem;
+  list-style: 1.2;
+  margin-bottom: 2rem;
+}
+
+a:link,
+a:visited {
+  color: #fff;
+}
+
+.footer-link a:hover,
+a:active {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* 
+********************************************
+RESPONSIVE
+********************************************
+*/
+
+@media (max-width: 1050px) {
+  html {
+    font-size: 47%;
+  }
+}
+
+@media (max-width: 37.5em) {
+  html {
+    font-size: 40%;
+  }
+  main {
+    display: block;
+    /* grid-template-columns: auto; */
+  }
+}
